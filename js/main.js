@@ -30,20 +30,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /* Resto de botones */
   let btns = document.getElementsByClassName("btn-agregar");
-  const data = document.getElementById("origen").value;
   // console.log(msg);
   function runningBtns() {
     for (let i = 0; i < btns.length; i++) {
       btns[i].addEventListener("click", function (event) {
+        const data = document.getElementById("origen").value;
         switch (i) {
           case 0:
-            document.getElementById("destino").innerHTML += `${data.repeat(1)}`;
+            document.getElementById("destino").innerHTML += `   ${data.repeat(
+              1
+            )}`;
             break;
           case 1:
-            document.getElementById("destino").innerHTML += `${data.repeat(5)}`;
+            document.getElementById("destino").innerHTML += `   ${data.repeat(
+              5
+            )}`;
             break;
           case 2:
-            document.getElementById("destino").innerHTML += `${data.repeat(
+            document.getElementById("destino").innerHTML += `   ${data.repeat(
               10
             )}`;
             break;
